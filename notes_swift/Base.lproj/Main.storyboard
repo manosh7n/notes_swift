@@ -1,24 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jXx-dJ-1k6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Заметки-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="notes_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRT-qn-lGQ">
+                                <rect key="frame" x="180" y="626" width="54" height="64"/>
+                                <state key="normal" title="Войти"/>
+                                <connections>
+                                    <action selector="toLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="6B4-Ij-0sy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDs-TG-JBO">
+                                <rect key="frame" x="132" y="725" width="150" height="30"/>
+                                <state key="normal" title="Зарегистрироваться"/>
+                                <connections>
+                                    <action selector="toSignUp" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nhl-IZ-UeJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="BDs-TG-JBO" secondAttribute="trailing" constant="132" id="1Xf-ON-7sL"/>
+                            <constraint firstItem="BDs-TG-JBO" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="CAE-fQ-KGO"/>
+                            <constraint firstItem="cRT-qn-lGQ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="181" id="PrB-7a-0Nx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="cRT-qn-lGQ" secondAttribute="trailing" constant="180" id="Q2z-0C-6hu"/>
+                            <constraint firstItem="cRT-qn-lGQ" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="538" id="VWU-6K-xcz"/>
+                            <constraint firstItem="BDs-TG-JBO" firstAttribute="top" secondItem="cRT-qn-lGQ" secondAttribute="bottom" constant="35" id="Z2y-s3-MsQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BDs-TG-JBO" secondAttribute="bottom" constant="107" id="hDF-9Z-UlQ"/>
+                            <constraint firstItem="cRT-qn-lGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="riE-s6-kQ3"/>
+                            <constraint firstItem="BDs-TG-JBO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v1D-ju-IFu"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Заметки" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="I5K-d4-cmv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="75.669642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yhM-xW-qjJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jXx-dJ-1k6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Moc-qO-xUv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aKZ-8J-l2J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X39-No-k08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="75.669642857142847"/>
+        </scene>
+        <!--Войти-->
+        <scene sceneID="iCI-Pl-asq">
+            <objects>
+                <viewController storyboardIdentifier="LoginController" id="8XS-Jf-5Vg" customClass="LoginViewController" customModule="notes_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AKh-4K-0XS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="50" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RuG-5o-fhi">
+                                <rect key="frame" x="35" y="346" width="344" height="204"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dbH-A2-eW5">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="64.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjK-ud-uFd">
+                                                <rect key="frame" x="0.0" y="0.0" width="344" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvF-zy-bfg">
+                                                <rect key="frame" x="0.0" y="30.5" width="344" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GkN-4J-LfY">
+                                        <rect key="frame" x="0.0" y="86.5" width="344" height="64.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixF-77-MJZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="344" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4Y-j0-k0m">
+                                                <rect key="frame" x="0.0" y="30.5" width="344" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="9ao-hl-mkJ">
+                                        <rect key="frame" x="0.0" y="173" width="231.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Запомнить?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivx-99-y7r">
+                                                <rect key="frame" x="0.0" y="0.0" width="95.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haA-Nd-dKq">
+                                                <rect key="frame" x="182.5" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GkN-4J-LfY" secondAttribute="trailing" id="CCo-Z1-xeX"/>
+                                    <constraint firstItem="dbH-A2-eW5" firstAttribute="leading" secondItem="RuG-5o-fhi" secondAttribute="leading" id="q9x-Xc-lXY"/>
+                                    <constraint firstItem="GkN-4J-LfY" firstAttribute="leading" secondItem="RuG-5o-fhi" secondAttribute="leading" id="vbn-Mn-Mix"/>
+                                    <constraint firstAttribute="trailing" secondItem="dbH-A2-eW5" secondAttribute="trailing" id="xD4-GB-6oB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GRm-HH-ON7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GRm-HH-ON7" firstAttribute="trailing" secondItem="RuG-5o-fhi" secondAttribute="trailing" constant="35" id="6GQ-tU-Aji"/>
+                            <constraint firstItem="RuG-5o-fhi" firstAttribute="centerY" secondItem="AKh-4K-0XS" secondAttribute="centerY" id="7Xp-zf-n9l"/>
+                            <constraint firstItem="RuG-5o-fhi" firstAttribute="leading" secondItem="GRm-HH-ON7" secondAttribute="leading" constant="35" id="DV5-x6-g91"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Войти" id="WfC-aF-WHv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0SV-0O-RnE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="-168"/>
+        </scene>
+        <!--Зарегистрироваться-->
+        <scene sceneID="scS-hE-94I">
+            <objects>
+                <viewController storyboardIdentifier="SignUpController" id="9wd-1f-nBS" customClass="SignUpViewController" customModule="notes_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vRB-sr-SQS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="c3F-ug-WmS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Зарегистрироваться" largeTitleDisplayMode="always" id="Xi7-NR-wx3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rME-fU-8Sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="532"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

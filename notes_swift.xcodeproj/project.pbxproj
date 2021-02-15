@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		0AB1836F25DAD5A3009E3F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1836E25DAD5A3009E3F9B /* AppDelegate.swift */; };
 		0AB1837125DAD5A3009E3F9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1837025DAD5A3009E3F9B /* SceneDelegate.swift */; };
-		0AB1837325DAD5A3009E3F9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1837225DAD5A3009E3F9B /* ViewController.swift */; };
+		0AB1837325DAD5A3009E3F9B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1837225DAD5A3009E3F9B /* StartViewController.swift */; };
 		0AB1837625DAD5A3009E3F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB1837425DAD5A3009E3F9B /* Main.storyboard */; };
 		0AB1837825DAD5A3009E3F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB1837725DAD5A3009E3F9B /* Assets.xcassets */; };
 		0AB1837B25DAD5A3009E3F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB1837925DAD5A3009E3F9B /* LaunchScreen.storyboard */; };
 		0AB1838625DAD5A3009E3F9B /* notes_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1838525DAD5A3009E3F9B /* notes_swiftTests.swift */; };
 		0AB1839125DAD5A3009E3F9B /* notes_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1839025DAD5A3009E3F9B /* notes_swiftUITests.swift */; };
+		0AB183AE25DADAC6009E3F9B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB183AD25DADAC6009E3F9B /* LoginViewController.swift */; };
+		0AB183B325DADAD4009E3F9B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB183B225DADAD4009E3F9B /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		0AB1836B25DAD5A3009E3F9B /* notes_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notes_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB1836E25DAD5A3009E3F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AB1837025DAD5A3009E3F9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0AB1837225DAD5A3009E3F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AB1837225DAD5A3009E3F9B /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		0AB1837525DAD5A3009E3F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AB1837725DAD5A3009E3F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AB1837A25DAD5A3009E3F9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		0AB1838C25DAD5A3009E3F9B /* notes_swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = notes_swiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB1839025DAD5A3009E3F9B /* notes_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notes_swiftUITests.swift; sourceTree = "<group>"; };
 		0AB1839225DAD5A3009E3F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AB183AD25DADAC6009E3F9B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0AB183B225DADAD4009E3F9B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		0AB1836D25DAD5A3009E3F9B /* notes_swift */ = {
 			isa = PBXGroup;
 			children = (
+				0AB183A325DAD6FD009E3F9B /* View */,
+				0AB183A225DAD6F6009E3F9B /* Model */,
+				0AB183A125DAD6E9009E3F9B /* Controllers */,
 				0AB1836E25DAD5A3009E3F9B /* AppDelegate.swift */,
 				0AB1837025DAD5A3009E3F9B /* SceneDelegate.swift */,
-				0AB1837225DAD5A3009E3F9B /* ViewController.swift */,
 				0AB1837425DAD5A3009E3F9B /* Main.storyboard */,
 				0AB1837725DAD5A3009E3F9B /* Assets.xcassets */,
 				0AB1837925DAD5A3009E3F9B /* LaunchScreen.storyboard */,
@@ -126,6 +132,38 @@
 				0AB1839225DAD5A3009E3F9B /* Info.plist */,
 			);
 			path = notes_swiftUITests;
+			sourceTree = "<group>";
+		};
+		0AB183A125DAD6E9009E3F9B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AB183B725DAEB37009E3F9B /* StartControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0AB183A225DAD6F6009E3F9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0AB183A325DAD6FD009E3F9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0AB183B725DAEB37009E3F9B /* StartControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AB1837225DAD5A3009E3F9B /* StartViewController.swift */,
+				0AB183AD25DADAC6009E3F9B /* LoginViewController.swift */,
+				0AB183B225DADAD4009E3F9B /* SignUpViewController.swift */,
+			);
+			path = StartControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB1837325DAD5A3009E3F9B /* ViewController.swift in Sources */,
+				0AB183AE25DADAC6009E3F9B /* LoginViewController.swift in Sources */,
+				0AB1837325DAD5A3009E3F9B /* StartViewController.swift in Sources */,
 				0AB1836F25DAD5A3009E3F9B /* AppDelegate.swift in Sources */,
 				0AB1837125DAD5A3009E3F9B /* SceneDelegate.swift in Sources */,
+				0AB183B325DADAD4009E3F9B /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
