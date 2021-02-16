@@ -13,10 +13,10 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: nil)
-
-        // Do any additional setup after loading the view.
+        
+        let tapper = UITapGestureRecognizer(target: self, action: #selector(tapOutsideKeyboard))
+        self.view.addGestureRecognizer(tapper)
     }
-    
 
     /*
     // MARK: - Navigation

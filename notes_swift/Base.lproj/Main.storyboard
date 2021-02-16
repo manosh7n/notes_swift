@@ -91,7 +91,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvF-zy-bfg">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvF-zy-bfg">
                                                 <rect key="frame" x="0.0" y="21.5" width="344" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -99,23 +99,23 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="GkN-4J-LfY">
-                                        <rect key="frame" x="0.0" y="67.5" width="344" height="55.5"/>
+                                        <rect key="frame" x="0.0" y="67.5" width="339" height="55.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixF-77-MJZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="344" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="339" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4Y-j0-k0m">
-                                                <rect key="frame" x="0.0" y="21.5" width="344" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4Y-j0-k0m">
+                                                <rect key="frame" x="0.0" y="21.5" width="339" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="9ao-hl-mkJ">
-                                        <rect key="frame" x="0.0" y="135" width="244.5" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9ao-hl-mkJ">
+                                        <rect key="frame" x="0.0" y="135" width="159.5" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Запомнить?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivx-99-y7r">
                                                 <rect key="frame" x="0.0" y="0.0" width="95.5" height="31"/>
@@ -123,17 +123,19 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haA-Nd-dKq">
-                                                <rect key="frame" x="195.5" y="0.0" width="51" height="31"/>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="haA-Nd-dKq">
+                                                <rect key="frame" x="110.5" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="GkN-4J-LfY" secondAttribute="trailing" id="CCo-Z1-xeX"/>
-                                    <constraint firstItem="dbH-A2-eW5" firstAttribute="leading" secondItem="RuG-5o-fhi" secondAttribute="leading" id="q9x-Xc-lXY"/>
-                                    <constraint firstItem="GkN-4J-LfY" firstAttribute="leading" secondItem="RuG-5o-fhi" secondAttribute="leading" id="vbn-Mn-Mix"/>
-                                    <constraint firstAttribute="trailing" secondItem="dbH-A2-eW5" secondAttribute="trailing" id="xD4-GB-6oB"/>
+                                    <constraint firstItem="GkN-4J-LfY" firstAttribute="leading" secondItem="RuG-5o-fhi" secondAttribute="leading" id="9LZ-qj-3pS"/>
+                                    <constraint firstItem="dbH-A2-eW5" firstAttribute="top" secondItem="RuG-5o-fhi" secondAttribute="top" id="Bjb-rX-WEk"/>
+                                    <constraint firstItem="GkN-4J-LfY" firstAttribute="top" secondItem="dbH-A2-eW5" secondAttribute="bottom" constant="12" id="fEQ-od-xRR"/>
+                                    <constraint firstAttribute="trailing" secondItem="GkN-4J-LfY" secondAttribute="trailing" constant="5" id="gNc-zj-Hn7"/>
+                                    <constraint firstItem="dbH-A2-eW5" firstAttribute="leading" secondItem="RuG-5o-fhi" secondAttribute="leading" id="xm2-6p-IQD"/>
+                                    <constraint firstAttribute="trailing" secondItem="dbH-A2-eW5" secondAttribute="trailing" id="zoR-g2-wPP"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNG-CI-obR">
@@ -161,6 +163,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Войти" id="WfC-aF-WHv"/>
+                    <connections>
+                        <outlet property="loginTextField" destination="rvF-zy-bfg" id="54c-Dq-pL1"/>
+                        <outlet property="passwordTextField" destination="X4Y-j0-k0m" id="hJd-hd-LS6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0SV-0O-RnE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,12 +199,12 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feV-q7-TqF">
                                                 <rect key="frame" x="0.0" y="86" width="344" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B23-n0-zDE">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Подтвердить пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B23-n0-zDE">
                                                 <rect key="frame" x="0.0" y="129" width="344" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -244,15 +250,6 @@
                     <view key="view" contentMode="scaleToFill" id="9J0-DX-U7e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjX-Iy-Ag0">
-                                <rect key="frame" x="175" y="503" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bVi-oa-BUu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
