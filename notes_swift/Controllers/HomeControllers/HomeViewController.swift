@@ -1,5 +1,5 @@
 //
-//  SignUpViewController.swift
+//  HomeViewController.swift
 //  notes_swift
 //
 //  Created by Дмитрий  Маношин  on 16.02.2021.
@@ -7,12 +7,10 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: nil)
 
         // Do any additional setup after loading the view.
     }

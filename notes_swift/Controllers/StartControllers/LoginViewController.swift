@@ -12,7 +12,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: nil)
+        
+    }
+    
+    @IBAction func toHomeViewController() {
+        let viewController = getViewControllerWithID(identifier: "HomeController")
+        self.navigationController?.setViewControllers([viewController], animated: true)
     }
     
 

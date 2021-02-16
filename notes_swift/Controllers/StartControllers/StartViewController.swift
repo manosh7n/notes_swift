@@ -12,7 +12,6 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
     }
     
     @IBAction func toLogin() {
@@ -22,11 +21,5 @@ class StartViewController: UIViewController {
     @IBAction func toSignUp() {
         self.navigationController?.pushViewController(getViewControllerWithID(identifier: "SignUpController"), animated: true)
     }
-    
-    func getViewControllerWithID(identifier: String) -> UIViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: identifier)
-    }
-
 }
 
