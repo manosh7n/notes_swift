@@ -8,6 +8,11 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
+    
+    @IBOutlet var nameField: UITextField!
+    @IBOutlet var loginField: UITextField!
+    @IBOutlet var passwordField: UITextField!
+    @IBOutlet var confirmPasswordField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +21,17 @@ class SignUpViewController: UIViewController {
         
         let tapper = UITapGestureRecognizer(target: self, action: #selector(tapOutsideKeyboard))
         self.view.addGestureRecognizer(tapper)
+    }
+    
+    @IBAction func signUp(_ sender: Any) {
+        let user = User(name: nameField.text!, login: loginField.text!, password: passwordField.text!)
+        
+        if let encodedUser = try? JSONEncoder().encode(user) {
+            UserDefaults.standard.set(encodedUser, forKey: user.login)
+            self.navigationController?.popViewController(animated: true)
+        } else {
+            print("Wrong data")
+        }
     }
 
     /*

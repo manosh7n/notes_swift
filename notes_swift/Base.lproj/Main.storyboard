@@ -148,7 +148,7 @@
                                     <color key="titleColor" systemColor="systemGray5Color"/>
                                 </state>
                                 <connections>
-                                    <action selector="toHomeViewController" destination="8XS-Jf-5Vg" eventType="touchUpInside" id="qez-5p-pYF"/>
+                                    <action selector="loginIn" destination="8XS-Jf-5Vg" eventType="touchUpInside" id="pOl-b1-jPW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -186,7 +186,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-I5-ose">
                                         <rect key="frame" x="0.0" y="10" width="344" height="163"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-Uo-akr">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-Uo-akr">
                                                 <rect key="frame" x="0.0" y="0.0" width="344" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -217,6 +217,9 @@
                                         <state key="normal" title="Регистрация">
                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signUp:" destination="9wd-1f-nBS" eventType="touchUpInside" id="Mek-Yj-zqY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -238,6 +241,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Регистрация" largeTitleDisplayMode="always" id="Xi7-NR-wx3"/>
+                    <connections>
+                        <outlet property="confirmPasswordField" destination="B23-n0-zDE" id="84l-v8-r2l"/>
+                        <outlet property="loginField" destination="Ed2-og-Xna" id="5NP-Br-DHG"/>
+                        <outlet property="nameField" destination="e7h-Uo-akr" id="e8F-fL-P8e"/>
+                        <outlet property="passwordField" destination="feV-q7-TqF" id="bl8-nM-mDF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rME-fU-8Sn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

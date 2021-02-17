@@ -18,8 +18,8 @@
 		0AB183AE25DADAC6009E3F9B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB183AD25DADAC6009E3F9B /* LoginViewController.swift */; };
 		0AB183B325DADAD4009E3F9B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB183B225DADAD4009E3F9B /* SignUpViewController.swift */; };
 		0AB183C625DB9B1A009E3F9B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB183C525DB9B1A009E3F9B /* HomeViewController.swift */; };
-		0AB183D225DBAA1F009E3F9B /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB183D125DBAA1F009E3F9B /* KeyChain.swift */; };
 		0AB183D725DC1E1A009E3F9B /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB183D625DC1E1A009E3F9B /* ExtensionViewController.swift */; };
+		0AB183E625DD4602009E3F9B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB183E525DD4602009E3F9B /* User.swift */; };
 		45D87E546E6D33A8047246AF /* Pods_notes_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 764A3E6C71413273FD3DE40B /* Pods_notes_swift.framework */; };
 		66294E7F490FACBC92A2107D /* Pods_notes_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF11E503A568A159A2ED5D83 /* Pods_notes_swiftTests.framework */; };
 		F6ED176E6CE65CADCFC90FAE /* Pods_notes_swift_notes_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A132ACF0EB01AFE7C61A404 /* Pods_notes_swift_notes_swiftUITests.framework */; };
@@ -62,8 +62,8 @@
 		0AB183AD25DADAC6009E3F9B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0AB183B225DADAD4009E3F9B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0AB183C525DB9B1A009E3F9B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		0AB183D125DBAA1F009E3F9B /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		0AB183D625DC1E1A009E3F9B /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		0AB183E525DD4602009E3F9B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		251DB530B2EF332C663A0962 /* Pods-notes_swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notes_swiftTests.release.xcconfig"; path = "Target Support Files/Pods-notes_swiftTests/Pods-notes_swiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		51D9F6423B9289569348409D /* Pods-notes_swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notes_swiftTests.debug.xcconfig"; path = "Target Support Files/Pods-notes_swiftTests/Pods-notes_swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		764A3E6C71413273FD3DE40B /* Pods_notes_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notes_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,7 +170,7 @@
 		0AB183A225DAD6F6009E3F9B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0AB183D125DBAA1F009E3F9B /* KeyChain.swift */,
+				0AB183E525DD4602009E3F9B /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -474,7 +474,7 @@
 				0AB1837325DAD5A3009E3F9B /* StartViewController.swift in Sources */,
 				0AB1836F25DAD5A3009E3F9B /* AppDelegate.swift in Sources */,
 				0AB1837125DAD5A3009E3F9B /* SceneDelegate.swift in Sources */,
-				0AB183D225DBAA1F009E3F9B /* KeyChain.swift in Sources */,
+				0AB183E625DD4602009E3F9B /* User.swift in Sources */,
 				0AB183C625DB9B1A009E3F9B /* HomeViewController.swift in Sources */,
 				0AB183B325DADAD4009E3F9B /* SignUpViewController.swift in Sources */,
 			);

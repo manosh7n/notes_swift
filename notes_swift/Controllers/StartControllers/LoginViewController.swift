@@ -31,6 +31,16 @@ class LoginViewController: UIViewController {
         self.navigationController?.setViewControllers([viewController], animated: true)
     }
     
+    @IBAction func loginIn() {
+        if let userForKey = UserDefaults.standard.object(forKey: loginTextField.text!) as? Data {
+            if let decodedUser = try? JSONDecoder().decode(User.self, from: userForKey) {
+                print(decodedUser)
+            } else {
+                print("Wrong login or password")
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

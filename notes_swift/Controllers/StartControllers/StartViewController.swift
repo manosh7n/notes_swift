@@ -13,6 +13,14 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
+        
+        // Delete all values from UserDefaults.standart (for test)
+        let defaults = UserDefaults.standard
+        let dictionary = defaults.dictionaryRepresentation()
+        dictionary.keys.forEach { key in
+            defaults.removeObject(forKey: key)
+        }
+        
     }
     
     @IBAction func toLogin() {
